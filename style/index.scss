@@ -1,0 +1,19 @@
+@import "./breakpoints.scss", "./colors.scss", "./fonts.scss";
+
+.navigation-icon {
+   svg {
+      fill: red;
+   }
+
+   @include tablet {
+      svg {
+         fill: blue;
+      }
+   }
+
+   @include mobile {
+      svg {
+         fill: violet;
+      }
+   }
+}

@@ -1,0 +1,15 @@
+$tablet: 1600px;
+$mobile: 400px;
+
+// Tablet Breakpoint
+@mixin tablet {
+   @media only screen and (max-width: $tablet) {
+      @content;
+   }
+}
+// Mobile Breakpoint
+@mixin mobile {
+   @media only screen and (max-width: $mobile) {
+      @content;
+   }
+}
