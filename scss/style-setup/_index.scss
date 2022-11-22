@@ -1,0 +1,30 @@
+@use './breakpoints.scss' as *;
+@use './colors.scss'as *;
+@use './icons.scss'as *;
+@use './fonts.scss'as *;
+@forward './breakpoints.scss';
+@forward './colors.scss';
+@forward './icons.scss';
+@forward './fonts.scss';
+
+
+.navigation-icon {
+   svg {
+      fill: red;
+   }
+
+   @include tablet {
+      svg {
+         fill: blue;
+      }
+   }
+
+   @include laptop {
+      svg {
+         fill: rgb(130, 215, 238);
+      }
+   }
+} 
+
+
+

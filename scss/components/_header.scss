@@ -1,4 +1,4 @@
-@import "../style-setup/index.scss";
+@use "../style-setup/index.scss" as *;
 .navigation {
    svg {
       fill: blue;
