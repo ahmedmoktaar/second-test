@@ -1,21 +1,15 @@
-$tablet: 30rem;
-$laptop: 48rem;
+$mobile: 30rem;
 
 @mixin mobile {
-   @media only screen and (max-width:  $tablet) {
-      @content;
-   }
-}
-
-@mixin tablet {
-   @media only screen and (min-width:  $tablet) {
+   @media only screen and (max-width:  $mobile) {
       @content;
    }
 }
 
 @mixin laptop {
-   @media only screen and (min-width:  $laptop) {
+   @media only screen and (min-width:  $mobile) {
       @content;
    }
 }
+
 

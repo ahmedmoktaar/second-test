@@ -1,6 +1,41 @@
 @use "../style-setup/index.scss" as *;
-.navigation {
-   svg {
-      fill: blue;
+header {
+   display: flex;
+   margin: 3rem 2rem;
+   @include laptop {
+      padding: 1.7rem 0 .8rem .5rem;
+      margin: 0 1rem 0 0;
+   }
+   div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      @include laptop {
+      justify-content:flex-start;
+      }
+   }
+}
+
+.company-name {
+   font-weight: 600;
+   font-size: 1.3rem;
+   letter-spacing: .3rem;
+   margin-left: 0.4rem;
+   @include laptop {
+      font-size: 1rem;
+      margin: 0.3rem .3rem ;
+   }
+}
+.menu {
+   @include laptop {
+      display: none;
+   }
+}
+.search {
+   display: none;
+   @include laptop {
+      display: block;
+      order: 1;
+      margin-left: auto;
    }
 }

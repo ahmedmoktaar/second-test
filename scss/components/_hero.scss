@@ -1,1 +1,48 @@
 @use "../style-setup/index.scss" as *;
+
+.lump {
+    display: none;
+    @include laptop {
+        display: block;
+        object-fit: contain;
+        width: 20%;
+    }
+}
+
+
+.marketing {
+    margin: 1.5rem;
+    padding: 0.3rem;
+    border: 2px solid rgb(53, 175, 175);
+    max-width: fit-content;
+    letter-spacing: .15rem;
+    font-weight: 600;
+}
+
+header + div {
+    @include laptop {
+        display: flex;
+    }
+}
+main {
+
+    p {
+        margin: 1.5rem;
+    }
+    h1 {
+        line-height: 2.5rem;
+        margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .date-one {
+        margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    i {
+        float: right;
+        margin: 1rem 1.5rem;
+    }
+
+    
+}
+
