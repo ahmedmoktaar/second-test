@@ -1,0 +1,29 @@
+@use "../style-setup/index.scss" as *;
+
+.nav {
+    display: none;
+
+    @include laptop {
+        width: 9rem;
+        list-style-type: none;
+        opacity: 0.7;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 .3rem;
+        margin: 1rem 2rem 0 1rem;
+
+        a {
+            padding: .5rem;
+        }
+
+        .hz-bar {
+            border: 0.01rem solid rgba(233, 233, 243);
+            height: 0.001rem;
+            padding: 0;
+            margin: 1rem 0.4rem;
+            box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
+        }
+    }
+}
