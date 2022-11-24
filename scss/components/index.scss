@@ -22,3 +22,18 @@ body {
     display: block;
   }
 
+  h1 {
+    font-size: 2.5rem;
+    line-height: 5;
+  }
+
+a {
+  text-decoration: none;
+  &:link {
+      color: $black-color;
+      opacity: 0.8;
+  }
+  &:hover {
+      color: $cyan-color;
+  }
+}
