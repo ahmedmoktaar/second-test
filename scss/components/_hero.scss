@@ -11,7 +11,9 @@ header + div {
         display: flex;
         flex-wrap: nowrap;
         gap: 2rem;
-        height: 21rem;
+        width: 77rem;
+        height: 22rem;
+        margin-right: 3rem;
     }
 }
 
@@ -19,33 +21,20 @@ header + div {
     display: none;
     @include laptop {
         display: inline-block;
-        width: 37%;
+        flex: 1 1 8rem;
     }
 }
 
-.villa {
-    @include laptop {
-        width: 52%;
-    }
-}
-
-
-.article-one {
-    @include laptop {
-        display: grid;
-        grid-template-columns: 3fr 3fr;
-        width: 91%;
-        margin-right: 0;
-    }
-}
 
 .marketing {
     margin: 1.5rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     border: 2px solid rgb(53, 175, 175);
     max-width: fit-content;
-    letter-spacing: .15rem;
+    letter-spacing: .1rem;
     font-weight: 600;
+    font-size: 0.8rem;
+    line-height: normal;
     @include laptop {
         margin:1.5rem 0 0 0;
     }
@@ -63,14 +52,21 @@ header + div {
 
 }
 
-main {
-    div {
+.article-one {
+   
+    @include laptop {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        width: 76rem;
+        margin-right: 0;
+    }
         p {
-            margin: 1.5rem 1.5rem 0;
+            margin: 1.5rem 1.5rem 0 1.5rem;
             @include laptop {
             margin: 1.5rem 0;
             }
         }
+
         h1 {
             line-height: 2.5rem;
             margin: 1.5rem 1.5rem 0.5rem 1.5rem;
@@ -78,11 +74,13 @@ main {
                 margin: 1.5rem 0;
                 }
             }
+
         div {
             float: right;
-            margin: 0.5rem 1.5rem;
+            transform: translate(-1.5rem, -0.5rem);
             grid-column: 2/3;
             justify-self: flex-end;
+            margin: 0;
             @include laptop {
                 margin: 0;
                 }
@@ -95,6 +93,72 @@ main {
                     }
             }
         }
-    }    
+      
 }
 
+.the-latest {
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    margin: 1rem 1.5rem .5rem;
+}
+
+.container {
+    display: grid;
+    margin: 1.5rem;
+
+    .date-two {
+        margin: 0.5rem 0;
+    }
+    
+}
+
+.sec-one{
+    display: flex;
+    margin-bottom: 2rem;
+    
+    .marketing {
+        margin: 0 0 0.5rem 0;
+    }
+
+    div {
+        margin: 0;
+    }
+
+    img {
+        min-width: 8rem;
+        height: 100%;
+        flex: 1 1 3rem;
+        max-width: 8rem;
+    }
+
+    i {
+        display: none;
+    }
+}
+
+.sec-two{
+    display: flex;
+    
+    .marketing {
+        margin: 0 0 0.5rem 0;
+    }
+
+    div {
+        margin: 0;
+    }
+
+    img {
+        min-width: 8rem;
+        height: 100%;
+        flex: 1 1 3rem;
+        max-width: 8rem;
+    }
+
+    i {
+        display: none;
+    }
+}
+
+.web-only {
+    display: none;
+}
